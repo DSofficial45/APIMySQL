@@ -6,8 +6,8 @@ export default class PersonajesDAO{
         let url = `https://api.mercadolibre.com/sites/MLU/search?category=MLU1144`;
         let consulta = await fetch(url);
         let datos = await consulta.json();
-        let personajes = datos.items;
-        return personajes;
+        let productos = datos.results;
+        return productos;
     }
     
 }

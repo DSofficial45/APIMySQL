@@ -1,18 +1,18 @@
 <?php
 function connection()
 {
-    try{
+    try {
         $host = "localhost";
-        $usuario = "";
+        $usuario = "root";
         $password = "";
-        $bd = "";
+        $bd = "mercado";
         $puerto = 3306;
         $mysqli = new mysqli ($host, $usuario, $password, $bd, $puerto);
-        return $mysqli;
+         return $mysqli;
+    } catch (Exception $e) {
+        echo '404 NOT FOUND - Excepción capturada: ', $e->getMessage();
+       
     }
-    catch (Exception $e){
-        echo '-404 NOT FOUND- Exepcion capturada: ', $e->getMessage();
-    }
 }
 
 ?>
