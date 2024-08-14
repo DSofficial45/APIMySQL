@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+}
+
+/*/------------------------------------/*/
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(215, 215, 215);
+    font-family: impact;
+    font-size: 20px;
+}
+
+/*/------------------------------------/*/
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+th{
+    font-family: arial;
+    font-weight: bold;
+    border: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
