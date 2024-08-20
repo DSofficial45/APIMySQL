@@ -41,7 +41,7 @@ async function guardarProducto(producto){
    dataProducto.append('permalink', producto.permalink);
    dataProducto.append('thumbnail', producto.thumbnail);
    dataProducto.append('precio', producto.price);
-   let url = window.location.origin + "/API-MercadoLibre-Pesuuti/backEnd/controller/MercadoController.php?funcion=agregar";
+   let url = window.location.origin + "/API-MercadoLibre-Pesuuti/backEnd/controller/MercadoController.php?function=agregar";
    let config = {
        method: 'POST' ,
        body: dataProducto
